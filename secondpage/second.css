@@ -1,0 +1,38 @@
+html{
+         font-size : 22px
+}
+           
+body{ 
+         background-color: #111827;
+         color:white;
+}
+
+.h1{
+    text-align:center;
+    text-shadow:
+        0 0 5px rgba(255, 228, 196, 0.6),
+        0 0 15px rgba(255, 228, 196, 0.4),
+        0 0 30px rgba(255, 228, 196, 0.2);
+
+    color:#111827;    
+
+}
+
+.intro{
+    font-size:90%;
+}
+
+.cards >section> article {
+    transition : transform 0.3s ease;
+}
+
+.cards>section>article:hover{
+    transform:scale(1.1);
+    overflow:hidden;   
+}
+
+a:hover{
+    color:blanchedalmond;
+}
+
+
