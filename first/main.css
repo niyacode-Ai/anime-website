@@ -10,6 +10,8 @@
     text-align:center;
     margin-bottom: 20px;
     transition: transform 0.3s ease;
+    z-index: 2;
+    position:relative;
 } 
 
 body{
@@ -36,14 +38,25 @@ body{
     animation:fade 12s infinite;
 }
 .bg1{
-    background-image:url(images/eye3.jpg);
+    background-image:url(../images/eye3.jpg);
     animation-delay:0s;
 
 }
 
 .bg2{
-    background-image:url(images/eye2.jpg);
+    background-image:url(../images/eye2.jpg);
+    animation-delay:3s;
+}
+
+.bg3{
+    background-image:url(../images/eye1.jpg);
     animation-delay:6s;
+}
+
+.bg4{
+    background-image:url(../images/eye4.jpg);
+    animation-delay:9s;
+    margin:0;
 }
 
 .overlay{
@@ -53,28 +66,26 @@ body{
     background:rgba(17,24,39,0.5);
 }
 
-@keyframes fade{
-
-    0%{
-        opacity:0;
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+   
+    5% {
+        opacity: 0.5;
+    }
+  
+    25% {
+        opacity: 0.5;
+    }
+ 
+    30% {
+        opacity: 0;
     }
 
-    20%{
-        opacity:.8;
+    100% {
+        opacity: 0;
     }
-
-    40%{
-        opacity:.8;
-    }
-
-    60%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:0;
-    }
-
 }
 
 .login{
