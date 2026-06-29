@@ -3,19 +3,54 @@ html{
 }
            
 body{ 
+         font-family: Montserrat;
          background-color: #111827;
          color:white;
+         margin:0;
 }
 
 .h1{
-    text-align:center;
+    font-family:defult ;
+    text-align:left;
     text-shadow:
         0 0 5px rgba(255, 228, 196, 0.6),
         0 0 15px rgba(255, 228, 196, 0.4),
         0 0 30px rgba(255, 228, 196, 0.2);
 
-    color:#111827;    
+    color:#111827;
+    font-size:30px;    
 
+}
+
+.first{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 20px;
+    
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.search form {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin:0;
+    
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    margin-left:auto;
+    margin-right:20px;
 }
 
 .intro{
@@ -24,15 +59,33 @@ body{
 
 .cards >section> article {
     transition : transform 0.3s ease;
+    border:3px solid #1a2848;
+    background-color:#1a2848;
+    border-radius:12px;
+    overflow:hidden;
+    width:250px;
+    text-align:center;
+
 }
 
 .cards>section>article:hover{
     transform:scale(1.1);
-    overflow:hidden;   
+    overflow:hidden;
+    box-shadow: 
+         0 0 6px #31709e,
+         0 0 6px #28267b,
+         0 0 6px #495e90;
 }
 
-a:hover{
-    color:blanchedalmond;
+.fav{
+    background-color:#1a2848;
+    border:2px solid #1a2848;
+    color:white;
 }
 
-
+.fav:hover{
+    box-shadow:
+       0 0 5px #31709e,
+       0 0 5px #cd1097,
+       0 0 5px #e34288;
+}
