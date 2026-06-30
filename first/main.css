@@ -35,6 +35,7 @@ body{
     position: fixed;
     inset: 0;
     z-index: 0;
+    opacity: 0;
     animation:fade 12s infinite;
 }
 .bg1{
@@ -114,3 +115,16 @@ input, textarea, select {
   height:5px;           
 }
 
+button{
+    outline:none;
+    width:60px;
+    height:30px;
+    background-color:red;
+    border:1px solid #d3daeb;
+    transition:transform 3s ease;
+}
+
+button:hover{
+    border:#3e1010;
+    cursor: pointer;
+}
