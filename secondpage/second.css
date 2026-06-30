@@ -5,7 +5,7 @@ html{
 body{ 
          font-family: Montserrat;
          background-color: #111827;
-         color:white;
+         color:#f0f0f0;;
          margin:0;
 }
 
@@ -20,6 +20,21 @@ body{
     color:#111827;
     font-size:30px;    
 
+}
+
+.header{
+    padding-left:20px;
+    margin-top: 50px ;
+    margin-bottom:5px;
+}
+
+.header h4{
+    margin:0;
+}
+
+.header> p{
+    margin-top:10px;
+    font-size:20px;
 }
 
 .first{
@@ -53,18 +68,35 @@ body{
     margin-right:20px;
 }
 
+.search input{
+    width:20vw;
+}
+
 .intro{
     font-size:90%;
 }
 
+.cards>section{
+    display:flex;
+    overflow-x:auto;
+    overflow-y:hidden;
+    gap: 30px;
+    padding:20px 10px;
+    scroll-behavior:smooth;
+    &::-webkit-scrollbar {
+    display: none;
+  }
+}
 .cards >section> article {
     transition : transform 0.3s ease;
     border:3px solid #1a2848;
     background-color:#1a2848;
     border-radius:12px;
-    overflow:hidden;
+    overflow-x:auto;
+    overflow-y:hidden;
     width:250px;
     text-align:center;
+    flex-shrink: 0;
 
 }
 
@@ -88,4 +120,50 @@ body{
        0 0 5px #31709e,
        0 0 5px #cd1097,
        0 0 5px #e34288;
+}
+
+.intro{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:40px;
+    background-color:black;
+    outline:none;
+    width:auto;
+    height:auto;
+    margin-top:40px;
+    margin-left:20px;
+    margin-right:20px;
+    border:2px solid whitesmoke;
+    padding:30px 20px;
+}
+
+.intro-logo{
+    display:flex;
+    flex:1;
+    justify-content: center;
+}
+
+.intro img:hover{
+    box-shadow:
+       0 0 5px #31709e,
+       0 0 5px #cd1097,
+       0 0 5px #e34288;
+}
+
+
+.intro-text{
+    font-size: 18px;
+    display:flex;
+    flex:3;
+    padding-right:40px;
+    border-right: 2px solid #e34288;
+}
+
+.intro:hover{
+    transition:scale(1.1);
+    box-shadow:
+         0 0 6px #31709e,
+         0 0 6px #dcdc67,
+         0 0 6px #495e90;
 }
